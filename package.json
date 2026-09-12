@@ -1,0 +1,11 @@
+{
+  "name": "nokhba-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Backend مركزي واحد يخدم 3 مواقع (site1, site2, site3) - إدارة روابط + تسجيل دخول أدمن، مبني على Vercel Serverless Functions و Neon Postgres.",
+  "dependencies": {
+    "@neondatabase/serverless": "^0.9.5",
+    "jsonwebtoken": "^9.0.2",
+    "cookie": "^0.6.0"
+  }
+}
