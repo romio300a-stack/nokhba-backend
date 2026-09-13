@@ -1,11 +1,12 @@
 -- ==========================================================
--- Schema لجدول الروابط الخاص بمواقع سنتر النخبة (site1 / site2 / site3)
--- نفّذ هذا الملف مرة واحدة على قاعدة بيانات Neon الخاصة بك.
+-- Schema لجدول الروابط الخاص بمواقع سنتر النخبة (site1 / site2 / site3 / site4)
+-- نفّذ هذا الملف مرة واحدة على قاعدة بيانات Neon الخاصة بك (لقاعدة بيانات جديدة فاضية).
+-- لو القاعدة شغالة بالفعل وفيها بيانات، استخدم ملف الـ migration بدل ده (شوف تعليمات الأدمن).
 -- ==========================================================
 
 CREATE TABLE IF NOT EXISTS links (
   id          TEXT PRIMARY KEY,
-  site_id     TEXT NOT NULL CHECK (site_id IN ('site1', 'site2', 'site3')),
+  site_id     TEXT NOT NULL CHECK (site_id IN ('site1', 'site2', 'site3', 'site4')),
   platform    TEXT NOT NULL,
   label       TEXT NOT NULL,
   url         TEXT NOT NULL,
